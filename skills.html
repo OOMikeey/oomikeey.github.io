@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Skills - Michael J Harris</title>
+    <style>
+        body {
+            background-color: #f9f9f9; /* Light background for the page */
+            font-family: 'Open Sans', sans-serif; /* Ensure consistent font */
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between; /* Align items in header */
+            align-items: center; /* Align items vertically */
+            max-width: 1200px; /* Set a max width for the header content */
+            margin: 0 auto; /* Center the header horizontally */
+            padding: 20px; /* Padding for header */
+        }
+
+        .skills-container {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center content */
+            padding: 40px;
+        }
+
+        h2 {
+            text-align: center; /* Center the heading */
+            color: #2C3E50; /* Darker text color */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .skills-description {
+            text-align: center; /* Center the description */
+            margin-bottom: 40px; /* Space below the description */
+            max-width: 800px; /* Max width for readability */
+            color: #555; /* Softer text color */
+        }
+
+        .skills-list {
+            display: flex;
+            flex-direction: column; /* Stack skills */
+            align-items: center; /* Center align skills */
+            width: 100%; /* Full width */
+        }
+
+        .skill-item {
+            width: 80%; /* Adjust width for skill items */
+            margin-bottom: 20px; /* Space between skills */
+            background: #fff; /* White background for each skill */
+            padding: 15px; /* Padding for skill items */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .skill-bar {
+            background: #3c3c3c; /* Grey for skill bars */
+            border-radius: 8px; /* Rounded corners */
+            height: 20px; /* Height of skill bars */
+            transition: width 0.5s ease-in-out; /* Smooth transition */
+        }
+
+        .skill-title {
+            font-size: 18px; /* Skill title size */
+            margin-bottom: 5px; /* Space between title and bar */
+            color: #2C3E50; /* Darker text color */
+        }
+
+        .skill-description {
+            font-size: 14px; /* Smaller text for description */
+            margin-top: 5px; /* Space above description */
+            color: #666; /* Gray color for description */
+        }
+
+       .resume-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+	    background-color: #ffffff; /* White background for contrast */
+	    padding: 8px 12px; /* Add padding for space around the link */
+	    border-radius: 8px; /* Rounded corners */
+            margin-right: 20px;
+            text-align: center;
+            visibility: visible; /* Make sure it is always visible */
+            opacity: 1; /* Fully opaque */
+        }
+
+        .resume-link a {
+            display: flex;
+            align-items: center;
+            color: #2C3E50; /* Darker text color */
+            font-size: 16px; /* Font size for the link */
+            text-decoration: none; /* No underline */
+        }
+
+        .resume-link a i {
+            margin-right: 5px; /* Space between icon and text */
+            font-size: 48px; /* Make the icon larger for better visibility */
+        }
+
+        .resume-link a:hover {
+            color: #3498db; /* Change color on hover */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/logo1.jpg" alt="logo" style="width:50px;height:50px;" class="photo">
+                </div>
+            </a>
+            <nav class="nav-container">
+                <ul class="nav-buttons">
+                    <li><a href="skills.html" class="nav-button">Skills</a></li>
+                    <li><a href="projects.html" class="nav-button">Projects</a></li>
+                    <li><a href="contact.html" class="nav-button">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="resume-link">
+                <a href="images/MichaelHarris_Resume.pdf" download>
+                    <i class="fas fa-file-pdf"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="skills-container">
+        <h2>My Skills</h2>
+        <div class="skills-description">
+            <p>
+                I have a diverse skill set that includes web development, cybersecurity, and continuous learning. 
+                I am passionate about creating efficient solutions and continuously improving my technical knowledge. 
+                Here are some of my key skills:
+            </p>
+        </div>
+        <div class="skills-list">
+            <div class="skill-item">
+                <div class="skill-title">HTML</div>
+                <div class="skill-bar" style="width: 90%;"></div>
+                <div class="skill-description">Proficient in semantic HTML and accessibility standards.</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-title">CSS</div>
+                <div class="skill-bar" style="width: 90%;"></div>
+                <div class="skill-description">Experienced in responsive design and CSS preprocessors.</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-title">Graphic Design</div>
+                <div class="skill-bar" style="width: 85%;"></div>
+                <div class="skill-description">Skilled in Adobe Creative Suite and visual communication.</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-title">Photography</div>
+                <div class="skill-bar" style="width: 80%;"></div>
+                <div class="skill-description">Experienced in digital photography and photo editing.</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-title">Cybersecurity</div>
+                <div class="skill-bar" style="width: 90%;"></div>
+                <div class="skill-description">
+                    Experienced in network security and threat analysis. 
+                    <br>
+                    <a href="images/CompTIA Security+.pdf" target="_blank">View Security+ Certification</a> | 
+                    <a href="images/Google_TechnicalSupport_Fundamentals.pdf" target="_blank">View Google IT Support Certification</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Michael J Harris</p>
+    </footer>
+</body>
+</html>

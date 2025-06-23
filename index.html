@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"> <!-- Favicon link -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Michael J Harris - Portfolio</title>
+</head>
+<body>
+   <header>
+    <div class="header-content">
+        <a href="index.html">
+            <div class="logo">
+                <img src="images/logo1.jpg" alt="logo" style="width:50px;height:50px;" class="photo">
+            </div>
+        </a><!-- Home Button -->
+        <nav class="nav-container">
+            <ul class="nav-buttons">
+                <li><a href="skills.html" class="nav-button">Skills</a></li> <!-- Skills Button -->
+                <li><a href="projects.html" class="nav-button">Projects</a></li> <!-- Projects Button -->
+                <li><a href="contact.html" class="nav-button">Contact</a></li> <!-- Contact Button -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Hello, I'm Michael Harris</h1>
+        <p>Content Creator & Designer</p>
+        <p>Offering photography and graphic design services to elevate your brand. <a href="contact.html" class="cta-button">Get in Touch!</a></p>
+    </section>
+
+    <section class="main-section" id="about">
+        <div class="dev-image">
+            <img src="images/Profile photo.jpg" alt="Profile photo of Michael Harris" class="photo profile-photo">
+        </div>
+        <div class="dev-info">
+            <h2>About Me</h2>
+            <p>
+                Hi! My name is Michael Harris. I'm a passionate web developer. I enjoy photography, skateboarding, baseball, coffee, and RPGs. I'm married with a daughter who motivates me to improve each day. I serve in the USAF and aspire to start my own company one day in one of my above interests.Also Dirtbag Airmen/DBA ᯓ ✈︎
+            </p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill-item">
+                <h3>HTML</h3>
+                <div class="skill-bar" style="width: 45%;"></div>
+            </div>
+            <div class="skill-item">
+                <h3>Graphic Design</h3>
+                <div class="skill-bar" style="width: 45%;"></div>
+            </div>
+            <div class="skill-item">
+                <h3>Photography</h3>
+                <div class="skill-bar" style="width: 45%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What People Say</h2>
+        <div class="testimonial-item">
+            <p>"Michael was incredible to work with. He truly understood our vision and captured our special moments beautifully. His ability to blend in and make everyone feel comfortable during the shoot made all the difference!"</p>
+            <p>- Mark & Marie</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Michael is a true artist! He transformed our family portraits into stunning works of art. His attention to detail and dedication to making us happy with every shot were impressive. I can't wait for our next session!"</p>
+            <p>- Aaron Arnold</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Working with Michael was an amazing experience. He captured our ideas and emotions in a way I never expected! His professionalism and approachability made the whole process enjoyable. I highly recommend him for any photography needs!"</p>
+            <p>- Rachel Jones</p>
+        </div>
+    </section>
+</main>
+
+<script>
+    // Create cursor element
+    let cursor = document.createElement('div');
+    cursor.classList.add('cursor');
+    document.body.appendChild(cursor);
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = `${e.pageX}px`;
+        cursor.style.top = `${e.pageY}px`;
+    });
+</script>
+
+<footer>
+    <p>&copy; 2024 Michael J Harris.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Centers text */
+    padding: 20px;
+}
+
+.skills-content {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+}
+
+.skills-image {
+    width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.skills-description {
+    max-width: 600px; /* Control width of the text block */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Michael J Harris - Portfolio</title>
+    <style>
+        .slider {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 50%; /* Set the width to 50% */
+            height: auto; /* Maintain aspect ratio */
+            margin: auto; /* Center the image */
+            display: block; /* Ensure it's treated as a block element */
+        }
+
+        .slider-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .slider-button {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo1.jpg" alt="logo" style="width:50px;height:50px;" class="photo">
+                </a>
+            </div>
+            <nav class="nav-container">
+                <ul class="nav-buttons">
+                    <li><a href="skills.html" class="nav-button">Skills</a></li>
+                    <li><a href="projects.html" class="nav-button">Projects</a></li>
+                    <li><a href="contact.html" class="nav-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="images/Photo1.jpg" alt="Project 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Photo2.jpg" alt="Project 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Photo3.jpg" alt="Project 3">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Photo4.jpg" alt="Project 4">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Photo5.jpg" alt="Project 5">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Photo6.jpg" alt="Project 6">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Photo7.jpg" alt="Project 7">
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <button class="slider-button" onclick="moveSlide(-1)">❮</button>
+                    <button class="slider-button" onclick="moveSlide(1)">❯</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Michael J Harris.</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = slides.children.length;
+
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            const offset = -currentSlide * 100;
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+</body>
+</html>

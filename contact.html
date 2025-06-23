@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Contact - Michael J Harris</title>
+    <style>
+        /* Additional styles for contact page */
+        body {
+            background-color: #f9f9f9; /* Light background for the entire page */
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 160px); /* Adjust based on your header/footer size */
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px; /* Set a max width for the form */
+            width: 100%;
+            padding: 20px; /* Reduced padding for a smaller form */
+            background-color: white; /* White background for the form */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        h2 {
+            margin-bottom: 20px; /* Space below the heading */
+            text-align: center; /* Center the heading */
+            color: #2C3E50; /* Darker text color */
+        }
+
+        label {
+            margin-bottom: 5px; /* Space between label and input */
+            font-weight: 600; /* Bold label */
+        }
+
+        input, textarea {
+            width: 100%; /* Full width for inputs */
+            padding: 12px; /* Padding for inputs */
+            margin-bottom: 20px; /* Space between fields */
+            border: 1px solid #ddd; /* Light border */
+            border-radius: 8px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            transition: border-color 0.3s; /* Smooth transition */
+        }
+
+        input:focus, textarea:focus {
+            border-color: #4caf50; /* Change border color on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        button {
+            padding: 12px; /* Padding for the button */
+            background-color: #3c3c3c; /* Light blue background */
+            color: white; /* White text */
+            border: none; /* Remove border */
+            border-radius: 8px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px; /* Font size */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: #87ceeb; /* Slightly darker blue on hover */
+        }
+
+        .footer-toolbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            flex-direction: column; /* Stack items vertically */
+            text-align: center; /* Center the text */
+            background-color: #2C3E50; /* Dark background for footer toolbar */
+            padding: 20px 0; /* Padding for footer */
+        }
+
+        .social-media {
+            list-style: none; /* Remove bullets */
+            display: flex; /* Flex for horizontal layout */
+            gap: 15px; /* Space between icons */
+            margin-top: 10px; /* Space above social links */
+            justify-content: center; /* Center the icons */
+        }
+
+        .social-media a {
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media a:hover {
+            transform: scale(1.1);
+            color: #87ceeb; /* Change the hover color if desired */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/logo1.jpg" alt="logo" style="width:50px;height:50px;" class="photo">
+                </div><!-- Home Button -->
+            </a>
+            <nav class="nav-container">
+                <ul class="nav-buttons">
+                    <li><a href="skills.html" class="nav-button">Skills</a></li>
+                    <li><a href="projects.html" class="nav-button">Projects</a></li>
+                    <li><a href="contact.html" class="nav-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-container">
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-toolbar">
+            <h3>Connect with me</h3>
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com/in/michael-harris-295b3b314" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/OOMikeey" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://x.com/OOMikeeyDev" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/oomikeey/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Michael J Harris</p>
+    </footer>
+</body>
+</html>

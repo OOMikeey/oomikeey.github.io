@@ -1,0 +1,121 @@
+/* Base styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #eaeaea);
+    color: #333;
+    margin: 0;
+}
+
+/* Container for layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 0;
+    text-align: center; /* Centered title */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #35424a;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout for Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Project Card Styling */
+.project-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image and Title */
+.project-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover;
+    transition: scale 0.3s; /* Image scaling */
+}
+
+.project-card:hover img {
+    transform: scale(1.05); /* Zoom on hover */
+}
+
+.project-card h3 {
+    margin: 15px 0;
+    color: #35424a;
+    font-size: 1.5em;
+}
+
+.project-card p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+/* Button Styles */
+.project-card a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #35424a;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    transition: background 0.3s, transform 0.3s;
+    margin-bottom: 15px;
+}
+
+.project-card a:hover {
+    background: #2c3e50; /* Darker on hover */
+    transform: scale(1.05); /* Scale effect */
+}
+
+/* Footer Styling */
+footer {
+    background: #35424a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #f4f4f4; /* Lighter color on hover */
+}

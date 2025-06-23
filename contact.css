@@ -1,0 +1,42 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+<style>
+    /* Existing styles remain unchanged... */
+
+    button {
+        padding: 12px; /* Padding for the button */
+        background-color: #add8e6; /* Light blue background */
+        color: white; /* White text */
+        border: none; /* Remove border */
+        border-radius: 8px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        font-size: 16px; /* Font size */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+
+    button:hover {
+        background-color: #87ceeb; /* Slightly darker blue on hover */
+    }
+
+    .social-media a {
+        text-decoration: none; /* Remove underline */
+        color: white; /* Change social links to white */
+        font-weight: 600; /* Bold links */
+    }
+
+    .footer-toolbar {
+        background-color: #2C3E50; /* Dark background for footer toolbar */
+        padding: 10px 0; /* Padding for footer */
+    }
+</style>
